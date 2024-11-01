@@ -1,0 +1,61 @@
+.like-dislike-icons {
+    display: inline;
+    position: relative;
+    left: 10px;
+}
+
+
+span.like-icon, span.dislike-icon {
+    position: relative;
+}
+
+span.like-icon {
+    margin: auto 10px;
+}
+
+.like-dislike-icons .like-icon span, .like-dislike-icons .dislike-icon span {
+    width: 28px;
+    height: 28px;
+    background-size: 82%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.like-dislike-icons .like-icon span {
+    background-image: url('img/like-bordered.png');
+}
+
+.like-dislike-icons .like-icon span.liked {
+    background-image: url('img/like-solid.png');
+}
+
+.like-dislike-icons .dislike-icon span {
+    background-image: url('img/like-bordered.png');
+    transform: rotate(180deg);
+    position: relative;
+    top: 3px;
+}
+
+.like-dislike-icons .dislike-icon span.disliked {
+    background-image: url('img/like-solid.png');
+    transform: rotate(180deg);
+    position: relative;
+    top: 3px;
+}
+
+.like-dislike-icons code {
+    font-size: 15px;
+    position: absolute;
+    color: gray;
+    bottom: 2px;
+    left: 25px;
+    width: 27px;
+    background: none !important;
+    padding: 0 !important;
+}
+
+.like-dislike-icons .like-icon code {
+    left: 30px;
+}
